@@ -8,77 +8,77 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Lab1_Kisil.Rest.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class PeopleController : ControllerBase
-    {
-        public PeopleDb db;
-        public PeopleController(PeopleDb db)
-        {
-            this.db = db;
-        }
+	[Route("api/[controller]")]
+	[ApiController]
+	public class PeopleController : ControllerBase
+	{
+		public PeopleDb db;
+		public PeopleController(PeopleDb db)
+		{
+			this.db = db;
+		}
 
-        [HttpGet]
-        public IActionResult Get()
-        {
+		[HttpGet]
+		public IActionResult Get()
+		{
 
-            var people = db.People.ToList();
+			var people = db.People.ToList();
 
 
-            return Ok(people);
-        }
-        //[HttpPost]
-        //public async Task<ActionResult<Person>> PostTodoItem(Person person)
-        //{
+			return Ok(people);
+		}
+		//[HttpPost]
+		//public async Task<ActionResult<Person>> PostTodoItem(Person person)
+		//{
 
-        //    db.People.Add(person);
-        //    await db.SaveChangesAsync();
+		//    db.People.Add(person);
+		//    await db.SaveChangesAsync();
 
-        //    return Ok(person);
+		//    return Ok(person);
 
-        //}
+		//}
 		//PUT
-        //[HttpPut("{id}")]
-        //public async Task<IActionResult> PutPerson(long id, Person person)
-        //{
-        //    if (id != person.PersonId)
-        //    {
-        //        return BadRequest();
-        //    }
+		//[HttpPut("{id}")]
+		//public async Task<IActionResult> PutPerson(long id, Person person)
+		//{
+		//    if (id != person.PersonId)
+		//    {
+		//        return BadRequest();
+		//    }
 
-        //    db.Entry(person).State = EntityState.Modified;
+		//    db.Entry(person).State = EntityState.Modified;
 
-        //    return NoContent();
-        //}
+		//    return NoContent();
+		//}
 
-        //GET by ID
-        //[HttpGet("{id}")]
-        //public async Task<ActionResult<Person>> GetPerson(int id)
-        //{
-        //    var person = await db.People.FindAsync(id);
+		//GET by ID
+		//[HttpGet("{id}")]
+		//public async Task<ActionResult<Person>> GetPerson(int id)
+		//{
+		//    var person = await db.People.FindAsync(id);
 
-        //    if (person == null)
-        //    {
-        //        return NotFound();
-        //    }
+		//    if (person == null)
+		//    {
+		//        return NotFound();
+		//    }
 
-        //    return person;
-        //}
+		//    return person;
+		//}
 
-        //DELETE
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeletePerson(long id)
-        {
-            var person = await db.People.FindAsync(id);
-            if (person == null)
-            {
-                return NotFound();
-            }
+		//DELETE
+		[HttpDelete("{id}")]
+		public async Task<IActionResult> DeletePerson(long id)
+		{
+			var person = await db.People.FindAsync(id);
+			if (person == null)
+			{
+				return NotFound();
+			}
 
-            db.People.Remove(person);
-            await db.SaveChangesAsync();
+			db.People.Remove(person);
+			await db.SaveChangesAsync();
 
-            return NoContent();
-        }
-    }
+			return NoContent();
+		}
+	}
 }
