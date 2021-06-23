@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "rmLi7aOpJbkjK6CeBGpL3MnRVIdllPK3CCtijO7HCs0i6F4CBmA9ZuSqW7c/spXQo+jEEipSa3BKPuwiMxWfFQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\wwg\\Desktop\\Xamarin\\XamarinLab3\\XamarinLab3.iOS\\XamarinLab3.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wwg\\.nuget\\packages\\newtonsoft.json\\11.0.1\\newtonsoft.json.11.0.1.nupkg.sha512",
+    "C:\\Users\\wwg\\.nuget\\packages\\plugin.permissions\\3.0.0.12\\plugin.permissions.3.0.0.12.nupkg.sha512",
+    "C:\\Users\\wwg\\.nuget\\packages\\restease\\1.5.4\\restease.1.5.4.nupkg.sha512",
+    "C:\\Users\\wwg\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\wwg\\.nuget\\packages\\xam.plugin.media\\4.0.1.5\\xam.plugin.media.4.0.1.5.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.4.0.991265\\xamarin.forms.4.4.0.991265.nupkg.sha512"
+  ],
+  "logs": []
+}
